@@ -11,7 +11,6 @@
     "url": "git+https://github.com/amitkumarmadina/Node-JS.git"
   },
   "author": "Amit",
-  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amitkumarmadina/Node-JS/issues"

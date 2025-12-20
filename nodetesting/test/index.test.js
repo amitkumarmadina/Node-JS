@@ -27,3 +27,20 @@ test('toMatch',()=>{
     expect(add("hello", "world")).toMatch(/hello/);
 });
 
+test("promiseTest", () => {
+  promiseTest(1, 2)
+    .then((data) => {
+      expect(data).toBe("+ve");
+    })
+    .catch((e) => {
+      expect(e).toBe("-ve");
+    });
+});
+
+test("promiseTest2", async () => {
+  await expect(promiseTest(0, 2).resolves.toBe("+ve")); //1-2=-1 failed
+});
+
+test("promiseTest3 reject", async () => {
+  await expect(promiseTest(0, 2).rejects.toBe("-ve")); //1-2=-1 failed
+});
